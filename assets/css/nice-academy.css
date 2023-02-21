@@ -17641,6 +17641,12 @@ div#small-dialog iframe {
     color: var(--heading-color);
 }
 
+@media (max-width: 360px){
+    .navbar .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
 .navbar .navbar-brand i {
     color: var(--primary-color);
     transform: rotate(-45deg);
@@ -18726,18 +18732,24 @@ button.owl-next {
 .gallery {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 50px 0;
     justify-content: flex-start;
     align-items: center;
+    width: 100vw;
 }
 
 .gallery-items {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    width: 80%;
+    width: 70%;
     justify-content: space-around;
-    align-items: space-around;
+}
+
+@media (max-width: 569px) {
+    .gallery-items {
+        width: 100%;
+    }
 }
 
 .gallery-image {
@@ -18759,6 +18771,11 @@ button.owl-next {
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     padding-bottom: 25px;
+}
+
+.headteacher-img {
+    background: var(--bg-color);
+    border-radius: 50%;
 }
 
 /* footer */
