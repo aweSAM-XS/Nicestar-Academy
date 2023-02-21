@@ -439,11 +439,6 @@ legend + * {
     height: auto;
 }
 
-[type='search'] {
-    outline-offset: -2px;
-    appearance: textfield;
-    -webkit-appearance: textfield;
-}
 
 /* rtl:raw:
 [type="tel"],
@@ -8964,9 +8959,9 @@ fieldset:disabled .btn {
         margin-bottom: auto !important;
     }
 
-    .mt-lg-0 {
+    /* .mt-lg-0 {
         margin-top: 0 !important;
-    }
+    } */
 
     .mt-lg-1 {
         margin-top: 0.25rem !important;
@@ -17753,183 +17748,7 @@ header.nav-fixed {
     display: none;
 }
 
-/*-- search --*/
-.navbar .search-btn i {
-    color: var(--heading-color);
-}
 
-.nav-fixed .navbar .search-btn i {
-    color: var(--heading-color);
-}
-
-.nav-fixed .search-right a {
-    color: var(--heading-color);
-}
-
-.navbar .search-right a:hover {
-    color: #fff;
-    opacity: 1;
-}
-
-.navbar form.search-box {
-    display: flex;
-}
-
-.navbar .search-right .popup form input[type='search'] {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 20px;
-    color: var(--heading-color);
-    border: none;
-    height: 60px;
-    background: var(--bg-color);
-    padding: 45px 30px;
-    width: 100%;
-    border-radius: 0;
-}
-
-.navbar .search-right .popup form button {
-    border: none;
-    cursor: pointer;
-    font-size: 28px;
-    text-align: center;
-    color: #fff;
-    width: 90px;
-    background: var(--primary-color);
-    line-height: 35px;
-    display: inline-block;
-    transition: 0.5s ease-out;
-    font-weight: 700;
-    display: block;
-    height: 90px;
-    line-height: 70px;
-    margin: 0 auto;
-    border-radius: 0;
-}
-
-.navbar .search-right .popup form button:hover {
-    background: var(--secondary-color);
-    color: #fff;
-    outline: none;
-    border: none;
-}
-
-.navbar .search-right .popup form input:focus {
-    outline: none;
-    border: none;
-}
-
-.navbar .search-right .pop-overlay {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 0;
-    transition: opacity 0ms;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 99;
-    background: rgba(25, 23, 23, 0.81);
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.85);
-    height: 100vh;
-}
-
-.navbar .search-right .pop-overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.navbar .search-right .popup {
-    margin: 0rem auto;
-    padding: 40px 50px;
-    max-width: 700px;
-    border-radius: 3px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.navbar .search-right .search-top {
-    display: grid;
-    grid-template-columns: auto 1fr 1fr;
-    grid-gap: 30px;
-    margin-top: 24px;
-}
-
-.navbar .search-right .search-top h4 {
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 16px;
-}
-
-.navbar .search-right .search-top span.fa {
-    padding-right: 10px;
-}
-
-.navbar .search-right .search-top li {
-    display: block;
-}
-
-.navbar .search-right .search-top li a {
-    font-size: 16px;
-    color: #fff;
-    line-height: 28px;
-}
-
-.navbar .search-right .search-top li a:hover {
-    color: #fff;
-}
-
-.navbar .search-right .close {
-    position: absolute;
-    top: 14px;
-    right: 0;
-    font-size: 40px;
-    color: #fff;
-    margin-right: 4.3em;
-}
-
-.navbar .search-right .close:hover {
-    opacity: 0.8;
-    background: none;
-}
-
-/*--//search--*/
-/* serach */
-.search-header input {
-    font-size: 15px;
-    border-radius: 30px 0 0 30px;
-    background: var(--bg-color);
-    padding: 8px 15px;
-    color: var(--heading-color);
-    border: 2px solid var(--border-color-light);
-    border-right: none;
-}
-
-.search-header input:focus {
-    box-shadow: none;
-    border-color: var(--border-color-light);
-    background: var(--bg-color);
-    color: var(--heading-color);
-}
-
-.search-header button.btn-style {
-    border-radius: 0 30px 30px 0;
-    box-shadow: none;
-    padding: 6px 16px;
-    font-size: 15px;
-}
-
-.search-header button.btn-style:hover {
-    color: var(--secondary-color);
-    color: #fff;
-}
-
-.nav-fixed .navbar .navbar-brand {
-    color: var(--heading-color);
-}
-
-/* //serach */
 @media only screen and (max-width: 991px) {
     header.nav-fixed {
         height: auto;
@@ -18037,21 +17856,6 @@ header.nav-fixed {
         top: 17px;
     }
 
-    .navbar .search-right .close {
-        margin-right: 3em;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar .search-right .close {
-        margin-right: 2em;
-    }
-}
-
-@media only screen and (max-width: 568px) {
-    .navbar .search-right .close {
-        margin-right: 1.5em;
-    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -18059,24 +17863,6 @@ header.nav-fixed {
         top: 14px;
     }
 
-    .navbar .search-right .popup form input[type='search'] {
-        font-size: 22px;
-        padding: 35px 20px;
-    }
-
-    .navbar .search-right .popup form button {
-        font-size: 20px;
-        height: 70px;
-        line-height: 60px;
-    }
-
-    .navbar .search-right .popup {
-        padding: 40px 20px;
-    }
-
-    .navbar .search-right .close {
-        margin-right: 1em;
-    }
 }
 
 /* //navigation styling */
@@ -18138,9 +17924,8 @@ h3.mission-vision {
 
 /* banner section */
 .w3l-banner {
-    background: var(--gradient-animation);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background: url(../images/banner2.png) no-repeat center center/cover fixed;
+    --banner-layer: rgb(0 0 0 / 62%);
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -18155,20 +17940,6 @@ h3.mission-vision {
     background: var(--banner-layer);
     z-index: -1;
     top: 0;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .w3l-banner {
@@ -18351,15 +18122,25 @@ img.img-fluid.img-dark-color {
 /* //about section */
 
 /* popular section */
+
 .w3l-bottom-grids-6 {
-    background: url(../images/bg2.jpg) no-repeat center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    position: relative;
-    z-index: 1;
+    background: var(--gradient-animation);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .w3l-bottom-grids-6:before {
@@ -18933,7 +18714,13 @@ button.owl-next {
 
 /* //3 grids section */
 
-
+/* //Meet our headteacher */
+.headteacher {
+    background: var(--gradient-animation);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding-bottom: 25px;
+}
 
 /* footer */
 .right-side {
