@@ -10597,11 +10597,11 @@ fieldset:disabled .btn {
 
 /* css style */
 :root {
-    --primary-color: #f7783c;
+    --primary-color: #dd3cf7;
     --secondary-color: #0abf53;
     --bg-color: #fff;
     --heading-color: #060606;
-    --font-color: #191a1c;
+    --font-color: #1c191c;
     --border-radius: 8px;
     --border-radius-full: 30px;
     --border-color-light: #eee;
@@ -10611,19 +10611,13 @@ fieldset:disabled .btn {
     --box-shadow: 0 0.5rem 1rem rgb(12 12 12 / 5%);
     --box-shadow-2: 0px 15px 30px rgb(29 23 77 / 8%);
     --banner-layer: transparent;
-    --gradient-animation: linear-gradient(
-        -45deg,
-        #aaffa9,
-        #11ffbd,
-        #87f786,
-        #07f9b6 
-    );
-    --gradient-color: linear-gradient(-45deg, #aaffa9, #11ffbd);
+    --gradient-animation: linear-gradient( -45deg, #eaa9ff, #ae11ff, #e086f7, #8607f9 );
+    --gradient-color: linear-gradient(-45deg, #eaa9ff, #ae11ff);
 }
 
 [data-theme='dark'] {
-    --primary-color: #f7783c;
-    --secondary-color: #0abf53;
+    --primary-color: #0abf53;
+    --secondary-color: #bb3cf7;
     --bg-color: #19211e;
     --heading-color: #fdfffc;
     --font-color: #25253e;
@@ -17918,11 +17912,15 @@ h3.title-style {
 
 h3.mission-vision {
     margin: 10px 0 -10px 0;
-    color: var(--bs-orange);
+    color: var(--primary-color);
 }
 /* //title style */
 
 /* banner section */
+.banner-content {
+    --heading-color: #fff
+}
+
 .w3l-banner {
     background: url(../images/banner2.png) no-repeat center center/cover fixed;
     --banner-layer: rgb(0 0 0 / 62%);
