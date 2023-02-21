@@ -18064,6 +18064,10 @@ h3.title-style span {
     font-weight: 600;
 }
 
+h3.awesam span{
+    color: var(--bg-color);
+}
+
 h3.text-bgs {
     font-size: 28px;
     font-weight: 100;
@@ -18167,6 +18171,11 @@ img.img-fluid.img-dark-color {
     border: 12px solid var(--bg-color);
     background: var(--primary-color);
     height: 200px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.w3l-bottom-grids-6 .area-box img:hover {
+    background: var(--secondary-color);   
 }
 
 .w3l-bottom-grids-6 .area-box:hover {
@@ -18193,15 +18202,15 @@ img.img-fluid.img-dark-color {
     left: -26px;
     width: 185px;
     height: 185px;
-    background-color: rgb(0 169 90 / 44%);
+    background-color: var(--primary-color);
     border-radius: 0 50%;
     z-index: -1;
-    transition: all 0.2s ease-out 0s;
+    transition: all 1s ease-out 0s;
 }
 
 .w3l-bottom-grids-6 .area-box:hover:before,
 .w3l-bottom-grids-6 .area-box.active:before {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .w3l-bottom-grids-6 .area-box:after {
@@ -18221,8 +18230,8 @@ img.img-fluid.img-dark-color {
 
 .w3l-bottom-grids-6 .area-box:hover:after,
 .w3l-bottom-grids-6 .area-box.active:after {
-    border-right: 25px solid var(--primary-color);
-    border-bottom: 25px solid var(--primary-color);
+    border-right: 25px solid var(--secondary-color);
+    border-bottom: 25px solid var(--secondary-color);
 }
 
 @media (max-width: 1280px) {
@@ -18711,6 +18720,38 @@ button.owl-next {
 }
 
 /* //3 grids section */
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gallery-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.gallery-image {
+    height: 300px;
+    width: 300px;
+}
+
+.gallery-img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* //Gallery */
 
 /* //Meet our headteacher */
 .headteacher {
