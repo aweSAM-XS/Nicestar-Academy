@@ -18783,6 +18783,8 @@ button.owl-next {
 
 .school-preview {
     display: flex;
+    height: 100%;
+    flex-wrap: wrap;
 }
 
 .learning {
