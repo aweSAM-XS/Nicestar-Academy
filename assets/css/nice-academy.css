@@ -18758,7 +18758,7 @@ button.owl-next {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin: 15px 0;
+    margin: 1rem 0;
 }
 /* //Gallery */
 
@@ -18772,7 +18772,6 @@ button.owl-next {
 
 .director-text {
     margin: 1rem 0;
-    font-size: 1.25rem;
 }
 
 
@@ -18794,7 +18793,7 @@ button.owl-next {
 
 .img-caption {
     position: absolute;
-    bottom: -15px;
+    bottom: -1rem;
     left: 0;
     background: var(--primary-color);
     width: 100%;
@@ -18803,12 +18802,13 @@ button.owl-next {
     text-align: center;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    text-transform: uppercase;
 }
 
 .challenges li {
     list-style-type: square;
     margin-left: 3rem;
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
 }
 /* Director's message */
 
