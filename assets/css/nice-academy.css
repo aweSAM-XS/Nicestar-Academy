@@ -18735,7 +18735,6 @@ button.owl-next {
     margin: 50px 0;
     justify-content: flex-start;
     align-items: center;
-    width: 100vw;
 }
 
 .gallery-items {
@@ -18753,8 +18752,8 @@ button.owl-next {
 }
 
 .gallery-image {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 }
 
 .gallery-img {
@@ -18764,6 +18763,66 @@ button.owl-next {
     object-fit: cover;
 }
 /* //Gallery */
+
+/* Director's message */
+.director {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.director-message {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.director-text {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+
+.school-preview {
+    display: flex;
+}
+
+.learning {
+    margin-top: 3rem;
+}
+
+.img-wrapper {
+    position: relative;
+    margin: 0 20px;
+}
+
+.farm-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.img-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-color);
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.challenges li{
+    list-style-type: square;
+    margin-left: 3rem;
+    font-size: 1.15rem;
+}
+/* Director's message */
 
 /* //Meet our headteacher */
 .headteacher {
