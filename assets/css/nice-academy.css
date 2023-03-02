@@ -18784,6 +18784,7 @@ button.owl-next {
 .school-preview {
     display: flex;
     height: 100%;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
