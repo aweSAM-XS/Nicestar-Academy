@@ -1,2 +1,2 @@
 # Nice-Academy
-Landing page for Nice Star Academy Eldoret.
+Landing page for Nice Star Academy, Eldoret.
